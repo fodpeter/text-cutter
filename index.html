@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Text cutter</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <link href="app.css" rel="stylesheet" title="Default Style">
+</head>
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div class="no-print">
+    <h2>Cut a text to multiple pages</h2>
+    <ol>
+      <li>Add text image: <br/> <textarea id="text" placeholder="Enter text to cut" cols="60" rows="10" ></textarea></li>
+      <li>
+        <button id="cutBtn" onclick="cutText();">Cut the text</button>
+      </li>
+      <li><button id="printBtn" onclick="window.print()">Print this page</button> Only the pages will be printed.</li>
+    </ol>
+  </div>
+  <div id="pages">
+  </div>
+</body>
+</html>
